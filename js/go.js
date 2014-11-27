@@ -32,7 +32,7 @@ function loadXML(){
     }
     
     //document.getElementById('test').innerHTML = "nice";
-    xmlhttp.open("GET", "https://api.xively.com/v2/feeds/628656427.csv?timezone=+8", false);
+    xmlhttp.open("GET", "https://api.xively.com/v2/feeds/628656427.csv?timezone=+8&"+Math.round(Math.random()*1000), false);
     xmlhttp.setRequestHeader("X-ApiKey", "Wn6Cs6OuTACpKGlssPnOajl1sgsx0byLhgheUzl1MrI0tRbD");
     xmlhttp.send();
     if (xmlhttp.readyState==4 && xmlhttp.status==200){
